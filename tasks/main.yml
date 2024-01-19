@@ -1,0 +1,9 @@
+---
+# tasks file for ansible-role-snap
+#
+#
+
+- name: Manage snap software
+  community.general.snap:
+    name: " {{ item }}"
+  loop: " {{ snaps | flatten(level=1) }}"

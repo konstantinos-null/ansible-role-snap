@@ -1,0 +1,7 @@
+---
+# vars file for ansible-role-snap
+#
+#
+
+snaps:
+  - hello-world
